@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "526947176556",
+    "project_id": "pashutrack",
+    "storage_bucket": "pashutrack.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526947176556:android:48978d34bfd81eb4e4c849",
+        "android_client_info": {
+          "package_name": "com.example.pashutrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8N5l9AYYp0MafYNY1hW2DTyEbl5SvcY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

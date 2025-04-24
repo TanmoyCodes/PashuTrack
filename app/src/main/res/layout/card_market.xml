@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:radius="16dp"
+    android:layout_gravity="center"
+    >
+
+    <!-- Card Content -->
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="240dp"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="8dp">
+
+        <!-- Image Section -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/marketplace" />
+
+            <!-- Tag (Reminders) -->
+            <TextView
+                android:id="@+id/reminder_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="8dp"
+                android:background="@drawable/rounded_image"/>
+
+
+        </RelativeLayout>
+
+        <!-- Content Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="8dp">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MarketPlace"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"/>
+
+            <!-- Subtitle -->
+            <TextView
+                android:id="@+id/subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Explore MarketPlace and find your desired products"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                android:paddingTop="4dp"/>
+
+            <!-- Icon Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
+
+                <!-- First Icon and Text (Bell + Digital) -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="16dp">
+
+
+
+                </LinearLayout>
+
+                <!-- Second Icon and Text (SecurRe) -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/secure_icon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/bell"
+                        />
+
+                    <TextView
+                        android:id="@+id/secure_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SecurRe"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginStart="4dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

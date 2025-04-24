@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- First Menu Item -->
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/add_home"
+        android:title="Home" />
+
+    <!-- Second Menu Item -->
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/search_grey"
+        android:title="Search" />
+
+    <!-- Third Menu Item -->
+    <item
+        android:id="@+id/nav_notifications"
+        android:icon="@drawable/bell"
+        android:title="Notifications" />
+
+    <!-- Fourth Menu Item -->
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/baseline_account_circle"
+        android:title="Profile" />
+
+</menu>
