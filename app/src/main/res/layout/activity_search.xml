@@ -178,11 +178,6 @@
                 android:layout_columnWeight="1" />
 
         </GridLayout>
-
-
-
-
-
     </LinearLayout>
 </ScrollView>
 </LinearLayout>
