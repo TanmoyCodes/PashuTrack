@@ -24,6 +24,7 @@ import android.content.Intent
 import android.view.ViewGroup
 import android.view.View
 import android.widget.LinearLayout
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class MainActivity : AppCompatActivity() {
@@ -33,10 +34,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val welcomeText: TextView = findViewById(R.id.WelcomeUser)
         val username = "Tanmoy"
-
-
-
-
         val recyclerView = findViewById<RecyclerView>(R.id.notificationsRecyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.isNestedScrollingEnabled = false
@@ -57,6 +54,39 @@ class MainActivity : AppCompatActivity() {
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
+
+        val linearLayout = findViewById<LinearLayout>(R.id.linearLayout)
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+
+
+        bottomNavigationView.setOnItemSelectedListener { menuItem ->
+            when(menuItem.itemId) {
+                R.id.nav_search -> {
+                    linearLayout.removeAllViews()
+                    val searchView = layoutInflater.inflate(R.layout.activity_search, null)
+                    linearLayout.addView(searchView)
+                    true // Return true to indicate the item was selected
+                }
+                R.id.nav_home -> {
+                    linearLayout.removeAllViews()
+                    val searchView = layoutInflater.inflate(R.layout.activity_main, null)
+                    linearLayout.addView(searchView)
+                    true // Return true to indicate the item was selected
+                }
+                R.id.nav_marketplace -> {
+                    linearLayout.removeAllViews()
+                    val marketplaceView = layoutInflater.inflate(R.layout.activity_marketplace, null)
+                    linearLayout.addView(marketplaceView)
+                    true
+                }
+                R.id.nav_settings -> {
+
+                    true
+                }
+                else -> false
+            }
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -67,12 +97,7 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val id = item.itemId
         when (id) {
-            R.id.action_search -> {
 
-                    val intent = Intent(this, SearchActivity::class.java)
-                    startActivity(intent)
-
-            }
             R.id.action_profile -> {
                 Toast.makeText(this, "Profile clicked", Toast.LENGTH_SHORT).show()
             }

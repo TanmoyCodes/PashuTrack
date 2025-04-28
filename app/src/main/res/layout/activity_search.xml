@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
+
     app:ignore="NamespaceTypo">
 <LinearLayout android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -34,43 +34,22 @@
     android:id="@+id/search_scroll_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:padding="16dp">
+    >
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <GridLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:columnCount="2"
-            android:useDefaultMargins="true"
-            android:alignmentMode="alignMargins"
-            android:layout_marginTop="4dp">
-
         <Button
             style="@style/MyButtonStyle"
-            android:layout_width="0dp"
+            android:layout_width="168dp"
             android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="🐾 New entry"
-            />
+            android:text="🐾 New entry" />
 
-        <Button
-            style="@style/MyButtonStyle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:text="🗓 Health" />
-        </GridLayout>
-
-
-
-        <!-- VACCINATIONS -->
+        <!-- Animal Marketplace-->
         <TextView
-            android:text="Vaccinations"
+            android:text="Animal Marketplace"
             android:textStyle="bold"
             android:textSize="18sp"
             android:layout_marginTop="16dp"
@@ -91,70 +70,35 @@
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 style="@style/MyButtonStyle"
-                android:text="🥕 Breeding" />
+                android:text="🐏 Buy Animals" />
 
             <Button
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:text="🐐 Breeds"
+                android:text="💰 Sell Animals"
                 style="@style/MyButtonStyle"
                 />
 
-            <Button
-                android:layout_width="0dp"
-                style="@style/MyButtonStyle"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:text="✂️ Shearing" />
-
-            <Button
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                style="@style/MyButtonStyle"
-                android:text="🐟 Aquacultu" />
-
-            <Button
-                android:layout_width="0dp"
-                style="@style/MyButtonStyle"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:text="🌾 Feed" />
-
-            <Button
-                android:layout_width="0dp"
-                style="@style/MyButtonStyle"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:text="🥛 Milking" />
-
-            <Button
-                android:layout_width="0dp"
-                style="@style/MyButtonStyle"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:text="🐄 Animal" />
-
-            <Button
-                android:layout_width="0dp"
-                style="@style/MyButtonStyle"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:text="🛒 Marketpla" />
 
         </GridLayout>
 
 
-        <!-- BUY ANIMALS -->
+        <!-- Livestock Management -->
         <TextView
-            android:text="Buy animals"
+            android:text="Livestock Management"
             android:textStyle="bold"
             android:textSize="18sp"
             android:layout_marginTop="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-
+        <!-- Health Management -->
+        <TextView
+            android:text="Health Management"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -164,45 +108,40 @@
             android:layout_marginTop="4dp">
 
             <Button
-                android:text="💰 Sell"
+                android:text="💉 Vaccination"
                 android:layout_width="0dp"
                 style="@style/MyButtonStyle"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1" />
 
             <Button
-                android:text="🐖 Livestock"
+                android:text="📅 Breeding"
                 style="@style/MyButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1" />
 
             <Button
-                android:text="📄 Digital"
+                android:text="🥛 Milking"
                 style="@style/MyButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1" />
-
             <Button
-                android:text="⏰ Reminder"
+                android:text="🏥 Checkups"
                 style="@style/MyButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1" />
 
         </GridLayout>
-
-
-        <!-- EVENTS -->
+        <!-- Animal Care -->
         <TextView
-            android:text="Events"
-            android:textStyle="bold"
-            android:textSize="18sp"
+            android:text="Animal Care"
+            android:textSize="16sp"
             android:layout_marginTop="16dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -212,36 +151,33 @@
             android:layout_marginTop="4dp">
 
             <Button
-                android:text="📅 Real-time"
+                android:text="✂️ Shearing"
+                android:layout_width="0dp"
+                style="@style/MyButtonStyle"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1" />
+
+            <Button
+                android:text="🍽️ Feeding"
                 style="@style/MyButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1" />
 
             <Button
-                android:text="🔁 Secure"
+                android:text="🏡Shelter"
                 style="@style/MyButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1" />
-
             <Button
-                android:text="🔒 Notificatio"
-                style="@style/MyButtonStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1" />
-
-            <Button
-                android:text="🔔 Settings"
+                android:text="🧼Hygiene"
                 style="@style/MyButtonStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1" />
 
         </GridLayout>
-
-
     </LinearLayout>
 </ScrollView>
 </LinearLayout>
