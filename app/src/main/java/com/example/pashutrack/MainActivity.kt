@@ -68,9 +68,10 @@ class MainActivity : AppCompatActivity() {
         val id = item.itemId
         when (id) {
             R.id.action_search -> {
-
-                    val intent = Intent(this, SearchActivity::class.java)
-                    startActivity(intent)
+                    val linearLayout = findViewById<LinearLayout>(R.id.linearLayout)
+                    linearLayout.removeAllViews()
+                    val seachView = layoutInflater.inflate(R.layout.activity_search, null)
+                    linearLayout.addView(seachView)
 
             }
             R.id.action_profile -> {
