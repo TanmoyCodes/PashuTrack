@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"/>
 </LinearLayout>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
     android:id="@+id/search_scroll_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -98,8 +98,8 @@
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
                 android:text="🐐 Breeds"
-                android:background="@color/white"
-                style="@style/MyButtonStyle"/>
+                style="@style/MyButtonStyle"
+                />
 
             <Button
                 android:layout_width="0dp"
@@ -112,6 +112,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
+                style="@style/MyButtonStyle"
                 android:text="🐟 Aquacultu" />
 
             <Button
