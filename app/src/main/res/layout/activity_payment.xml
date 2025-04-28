@@ -1,0 +1,35 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Payment options -->
+        <TextView android:text="Payment" android:textStyle="bold" android:textSize="18sp" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+        <TextView android:text="All transactions are secure and encrypted." android:textSize="14sp" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+
+        <RadioGroup android:id="@+id/paymentOptions" android:layout_marginTop="16dp" android:layout_height="wrap_content" android:layout_width="wrap_content">
+            <RadioButton android:id="@+id/radioCard" android:text="Card / UPI / Netbanking" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+            <RadioButton android:id="@+id/radioCOD" android:text="Cash on Delivery (COD)" android:layout_height="wrap_content" android:layout_width="wrap_content" />
+        </RadioGroup>
+
+        <!-- Billing address -->
+        <TextView android:text="Billing address" android:textStyle="bold" android:layout_marginTop="24dp" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+        <RadioGroup android:layout_height="wrap_content" android:layout_width="wrap_content">
+            <RadioButton android:text="Same as shipping address" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+            <RadioButton android:text="Use a different billing address" android:layout_height="wrap_content" android:layout_width="wrap_content"/>
+        </RadioGroup>
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/completeOrder"
+            android:text="Complete order"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/orange"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

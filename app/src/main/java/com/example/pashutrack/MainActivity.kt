@@ -18,7 +18,12 @@ import com.google.android.gms.auth.api.signin.*
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
 import androidx.recyclerview.widget.LinearLayoutManager
-
+import android.view.LayoutInflater
+import android.content.Context
+import android.content.Intent
+import android.view.ViewGroup
+import android.view.View
+import android.widget.LinearLayout
 
 
 class MainActivity : AppCompatActivity() {
@@ -58,11 +63,15 @@ class MainActivity : AppCompatActivity() {
         menuInflater.inflate(R.menu.toolbar_menu, menu)
         return true
     }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         val id = item.itemId
         when (id) {
             R.id.action_search -> {
-                Toast.makeText(this, "Search clicked", Toast.LENGTH_SHORT).show()
+
+                    val intent = Intent(this, SearchActivity::class.java)
+                    startActivity(intent)
+
             }
             R.id.action_profile -> {
                 Toast.makeText(this, "Profile clicked", Toast.LENGTH_SHORT).show()
@@ -74,4 +83,7 @@ class MainActivity : AppCompatActivity() {
         }
         return true
     }
+
 }
+
+

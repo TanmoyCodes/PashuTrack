@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:id="@+id/scrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buyButtonContainer"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/contentContainer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Image -->
+            <ImageView
+                android:id="@+id/detailImage"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/round_image_bg"
+                android:clipToOutline="true"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Name and Price -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/detailName"
+                    android:text="Livestock"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/detailPrice"
+                    android:text="$100"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#333333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Age -->
+            <TextView
+                android:id="@+id/detailAge"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age: 2 years"
+                android:textSize="16sp"
+                android:textColor="#777777" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/detailDescription"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This livestock is bred for optimal health and productivity. Well-maintained and ideal for sustainable farming."
+                android:textSize="14sp"
+                android:textColor="#666666" />
+
+            <!-- 'More' link -->
+            <TextView
+                android:id="@+id/detailMore"
+                android:text="more"
+                android:textSize="14sp"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Hidden extra details -->
+            <TextView
+                android:id="@+id/extraDetails"
+                android:visibility="gone"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Breed Info: Indigenous hybrid\n- Health: Fully vaccinated\n- Records: Available\n- Breeding Cycles: Tracked\n- Awards: Livestock fair winner"
+                android:textSize="14sp"
+                android:textColor="#555555" />
+            <Button
+                android:id="@+id/buyButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buy"
+                android:drawableStart="@drawable/baseline_add_shopping_cart_24"
+                android:drawablePadding="8dp"
+                android:backgroundTint="#FF7043"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/button_rounded_orange" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

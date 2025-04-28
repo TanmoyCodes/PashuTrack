@@ -1,0 +1,38 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Order summary header -->
+        <TextView android:text="Show order summary" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textStyle="bold" android:textSize="18sp"/>
+
+        <TextView android:text="Rs. 5,015.40" android:textSize="22sp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textStyle="bold" android:layout_marginBottom="16dp"/>
+
+        <!-- Contact and Shipping -->
+        <TextView android:text="Contact" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/contactEmail" android:text="user@email.com" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:text="Ship to" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
+        <TextView android:id="@+id/shippingAddress" android:text="Your shipping address here" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <!-- Shipping Method -->
+        <TextView android:text="Shipping method" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"/>
+        <TextView android:text="Standard Shipping (Rs. 69)" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/continueToPayment"
+            android:text="Continue to payment method"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/orange"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
