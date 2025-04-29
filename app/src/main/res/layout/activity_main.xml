@@ -81,10 +81,13 @@
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
 
-                <com.google.android.material.button.MaterialButton
+                <Button
+                    android:id="@+id/goToSignUpButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Click Me" />
+                    android:text="Go to Sign Up"
+                    android:layout_marginTop="32dp"
+                    android:layout_gravity="center" />
             </LinearLayout>
 
             <!-- New Section -->
@@ -171,7 +174,9 @@
                 <include layout="@layout/card_consult2" />
             </GridLayout>
 
+
         </LinearLayout>
+
     </androidx.core.widget.NestedScrollView>
 
     <!-- Bottom Navigation -->
