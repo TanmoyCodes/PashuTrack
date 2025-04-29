@@ -18,33 +18,7 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
-    <!-- Search Bar
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@drawable/search_bg"
-        android:padding="8dp"
-        android:gravity="center_vertical"
-        android:layout_marginBottom="16dp">
 
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@android:drawable/ic_menu_search"
-            android:tint="#999"/>
-
-        <EditText
-            android:id="@+id/searchInput"
-            android:hint="Search livestock..."
-            android:layout_marginStart="8dp"
-            android:background="@null"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
-    </LinearLayout>
-
-    -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -362,96 +336,6 @@
                         </androidx.cardview.widget.CardView>
 
                         <!--sheep -->
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="180dp"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="8dp"
-                            android:onClick="onItemClick"
-                            android:tag="Brown Cow|$1200|Age: 2 years|cow"
-                            app:cardCornerRadius="16dp"
-                            app:cardElevation="6dp"
-                            app:cardUseCompatPadding="true">
-
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <!-- Discount Tag -->
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_alignParentEnd="true"
-                                    android:layout_margin="6dp"
-                                    android:background="@drawable/discount_tag"
-                                    android:padding="4dp"
-                                    android:text="20% OFF"
-                                    android:textColor="#FFFFFF"
-                                    android:textSize="12sp"
-                                    android:textStyle="bold" />
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical">
-
-                                    <ImageView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="120dp"
-                                        android:scaleType="centerCrop"
-                                        android:src="@drawable/sheep" />
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="vertical"
-                                        android:padding="12dp">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Brown Cow"
-                                            android:textSize="16sp"
-                                            android:textStyle="bold" />
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Age: 2 years"
-                                            android:textColor="#777"
-                                            android:textSize="14sp" />
-
-                                        <LinearLayout
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:layout_marginTop="4dp"
-                                            android:orientation="horizontal">
-
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:text="₹960"
-                                                android:textColor="#000"
-                                                android:textSize="16sp"
-                                                android:textStyle="bold" />
-
-                                            <TextView
-                                                android:layout_width="wrap_content"
-                                                android:layout_height="wrap_content"
-                                                android:text=" ₹1200"
-                                                android:textColor="#888"
-                                                android:textSize="14sp" />
-                                        </LinearLayout>
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Save ₹240"
-                                            android:textColor="#4CAF50"
-                                            android:textSize="13sp" />
-                                    </LinearLayout>
-                                </LinearLayout>
-                            </RelativeLayout>
-                        </androidx.cardview.widget.CardView>
 
 
                     </LinearLayout>
