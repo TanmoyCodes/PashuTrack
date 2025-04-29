@@ -4,7 +4,6 @@ plugins {
     alias(libs.plugins.google.services)
 }
 
-
 android {
     namespace = "com.example.pashutrack"
     compileSdk = 35
@@ -17,6 +16,8 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+
     }
 
     buildTypes {
@@ -55,4 +56,3 @@ dependencies {
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.analytics)
 }
-
