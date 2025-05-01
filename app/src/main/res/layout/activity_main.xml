@@ -145,11 +145,11 @@
                 android:columnCount="2"
                 android:padding="14dp">
 
-                <include layout="@layout/card_health" />
+                <include layout="@layout/post_card" />
 
                 <include layout="@layout/card_vet" />
 
-                <include layout="@layout/card_health" />
+                <include layout="@layout/post_card" />
 
                 <include layout="@layout/card_vet" />
             </GridLayout>
