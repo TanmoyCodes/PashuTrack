@@ -4,7 +4,9 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.google.services)
+    kotlin("kapt")
 }
+
 
 android {
     namespace = "com.example.pashutrack"
@@ -57,4 +59,7 @@ dependencies {
     implementation(libs.google.auth)
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.analytics)
+    implementation(libs.glide)
+    kapt(libs.glideCompiler)
+
 }
