@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">PashuTrack</string>
     <string name="default_web_client_id">526947176556-av69dbolh44dag71kj8gc68rfikdn1bv.apps.googleusercontent.com</string>
+    <string name="manage_your_animals">🐄 Manage Your Animals</string>
+    <string name="help_support"><![CDATA[❓ Help & Support]]></string>
+    <string name="terms_conditions"><![CDATA[📜 Terms & Conditions]]></string>
+    <string name="privacy_policy">🔐 Privacy Policy</string>
+    <string name="about_us">ℹ️ About Us</string>
 </resources>
