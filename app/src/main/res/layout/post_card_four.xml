@@ -58,7 +58,7 @@
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Time to break-free from paddy for ...."
+                android:text="India may export up to 700K tonnes...."
                 android:textSize="18sp"
                 android:textColor="@android:color/black"
                 android:textStyle="bold"/>
@@ -68,7 +68,7 @@
                 android:id="@+id/subtitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="The Indian agriculture sector is at ...."
+                android:text="India is likely to export 600,000-700,000 metric"
                 android:textSize="14sp"
                 android:textColor="@android:color/darker_gray"
                 android:paddingTop="4dp"/>

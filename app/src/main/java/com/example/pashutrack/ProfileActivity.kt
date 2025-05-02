@@ -1,5 +1,6 @@
 package com.example.pashutrack
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
@@ -36,6 +37,10 @@ class ProfileActivity : AppCompatActivity() {
 
         btnLogout.setOnClickListener {
             Toast.makeText(this, "Logged out!", Toast.LENGTH_SHORT).show()
+
+
+                startActivity(Intent(this, SignUpActivity::class.java))
+
             finish()
         }
     }

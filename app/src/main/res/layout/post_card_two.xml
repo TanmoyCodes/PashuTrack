@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="190dp"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="16dp"
     android:radius="16dp"
     android:layout_gravity="center"
+    app:flow_horizontalGap="40dp"
+    app:flow_verticalGap="40dp"
+
     >
 
     <!-- Card Content -->
     <LinearLayout
         android:layout_width="180dp"
-        android:layout_height="240dp"
+        android:layout_height="248dp"
         android:orientation="vertical"
         android:background="@android:color/white"
         android:padding="8dp"
@@ -55,7 +58,7 @@
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="#Post 2"
+                android:text="Punjab's ban on hybrid ...."
                 android:textSize="18sp"
                 android:textColor="@android:color/black"
                 android:textStyle="bold"/>
@@ -65,7 +68,7 @@
                 android:id="@+id/subtitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Breed info, health records, breeding"
+                android:text="The Federation of Seed Industry of India...."
                 android:textSize="14sp"
                 android:textColor="@android:color/darker_gray"
                 android:paddingTop="4dp"/>
@@ -89,14 +92,14 @@
                         android:id="@+id/bell_icon"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:src="@drawable/bell"
+                        android:src="@drawable/baseline_add_reaction_24"
                         />
 
                     <TextView
                         android:id="@+id/digital_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Digital"
+                        android:text="Like"
                         android:textSize="12sp"
                         android:textColor="@android:color/black"
                         android:layout_marginStart="4dp"/>
@@ -113,14 +116,14 @@
                         android:id="@+id/secure_icon"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        android:src="@drawable/bell"
+                        android:src="@drawable/baseline_bookmark_add_24"
                         />
 
                     <TextView
                         android:id="@+id/secure_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="SecurRe"
+                        android:text="Add to reading list"
                         android:textSize="12sp"
                         android:textColor="@android:color/black"
                         android:layout_marginStart="4dp"/>

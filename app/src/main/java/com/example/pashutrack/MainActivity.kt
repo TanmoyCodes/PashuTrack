@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // 🔘 Button to go back to SignUpActivity (optional)
-        val goToSignUpButton = findViewById<Button>(R.id.goToSignUpButton)
+        val goToSignUpButton = findViewById<Button>(R.id.goToNotificationPage)
         goToSignUpButton.setOnClickListener {
             startActivity(Intent(this, SignUpActivity::class.java))
         }
